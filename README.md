@@ -32,7 +32,6 @@ This repository contains input files, documentation and simulation outputs (comi
 
 [01]: #single-cell-simulations
 [02]: https://github.com/dcyr/firewood_landis/blob/master/MRCOuta.md#single-cell-simulations
-[03]: 
 [04]: https://github.com/dcyr/firewood_landis/blob/master/MRCCentre.md
 [05]: https://github.com/dcyr/firewood_landis/blob/master/MRCOuta.md
 
