@@ -31,7 +31,7 @@ This repository contains input files, documentation and simulation outputs (comi
     + [MRC 'Outaouais' (Collines, Papineau, Pontiac)][05]
 
 [01]: #single-cell-simulations
-[02]: https://github.com/dcyr/firewood_landis/blob/master/MRCOuta.md#single-cell-simulations
+[02]: https://github.com/dcyr/firewood_landis/blob/master/README.md#preliminary-results-landscape-level
 [04]: https://github.com/dcyr/firewood_landis/blob/master/MRCCentre.md
 [05]: https://github.com/dcyr/firewood_landis/blob/master/MRCOuta.md
 
