@@ -25,21 +25,26 @@ This repository contains input files, documentation and simulation outputs (comi
 ### Table of content
 - [Study areas][01]
 - [Preliminary results (landscape level)][02]
-- [single-cell (stand-level) simulations][03]
+- [Single-cell (stand-level) simulations][03]
 - Area specific results (external links)
     + [MRC 'Centre' (Mékinac, Shawinigan, Portneuf)][04]
     + [MRC 'Outaouais' (Collines, Papineau, Pontiac)][05]
 
 [01]: #study-areas
-[02]: https://github.com/dcyr/firewood_landis/blob/master/README.md#preliminary-results-landscape-level
+[02]: #preliminary-results-landscape-level
 [03]: #single-cell-simulations
 [04]: https://github.com/dcyr/firewood_landis/blob/master/MRCCentre.md
 [05]: https://github.com/dcyr/firewood_landis/blob/master/MRCOuta.md
 
 
+
+
+
 ### Study areas
 
-The study areas cover the Sugar Maple and Yellow birch (temperate hardwoods) to the Balsam Fir and White Birch biomclimatic domains (mixedwood boreal). More specifically each of the simulated areas includes three MRCs [_(Municipalités régionales de comté)_][3]. The westernmost one is located in Outaouais and is the warmer study area, while the other one is located in Mauricie and Centre-du-Québec and extents further north, hence including more boreal species and forest types.
+The study areas cover the Sugar Maple and Yellow birch (temperate hardwoods) to the Balsam Fir and White Birch biomclimatic domains (mixedwood boreal). More specifically each of the simulated areas includes three MRCs [_(Municipalités régionales de comté)_][11]. The westernmost one is located in Outaouais and is the warmer study area, while the other one is located in Mauricie and Centre-du-Québec and extents further north, hence including more boreal species and forest types.
+
+[11]: https://en.wikipedia.org/wiki/Regional_county_municipality
 
 -----------  
 
@@ -71,17 +76,29 @@ Note that net emissions associated with production and consumption of firewood a
 -----------
 
 
-### Additionnal content
+### Single-cell simulations
 
-For a more detailed description of each simulation areas, with associated results, click on the links below.
+Here you can find illustrations of single-cell simulations in both areas. These figures illustrate how carbon stocks and fluxes evolve as forest stands develop with and without the influence of various harvest treatments.
+
+#### Carbon stocks 
+
+![](figures/pools_Summary_singleCellSims.png)
+
+#### Carbon fluxes
+
+##### Firewood harvesting (16% every 35 years)
+   
+![](figures/fluxes_Summary_singleCellSims_Firewood.png)
+
+##### Partial cutting (33% every 35 years)
+
+![](figures/fluxes_Summary_singleCellSims_CJ.png)
+
+##### Clearcut (95% every 100 years)
+
+![](figures/fluxes_Summary_singleCellSims_CPRS.png)
 
 
-
-[Click here][4] for illustrations of single-cell simulations in both areas. Those illustrate how carbon stocks and fluxes evolve as forest stands develop with and without the influence of various harvest treatments.
-
-
-
-[3]: https://en.wikipedia.org/wiki/Regional_county_municipality
-[4]: https://github.com/dcyr/firewood_landis/blob/master/singleCellSims.md
+  
 
 
