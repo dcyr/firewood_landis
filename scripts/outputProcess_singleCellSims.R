@@ -13,7 +13,7 @@ unitConvFact <- 0.01 ### from gC /m2 to tonnes per ha
 source("../scripts/fetchHarvestImplementationFnc.R")
 
 ### fetching outputs
-simDir <- "D:/Landis_ForCS_singleCellSims/MRCOuta_CPRS"
+simDir <- "D:/Landis_ForCS_singleCellSims/Papineau"
 simInfo <- read.csv(paste(simDir, "simInfo.csv", sep = "/"),
                     colClasses=c("simID"="character"))
 
@@ -46,6 +46,7 @@ log_BiomassC <- foreach(i = 1:nrow(simInfo), .combine="rbind") %dopar% {
     landtype <- simInfo[i,"landtypes"]
     initComm <- simInfo[i,"initComm"]
     replicate <- simInfo[i,"replicate"]
+    treatment <- simInfo[i,"treatment"]
     
     x <- read.csv(paste(sDir, "log_BiomassC.csv", sep = "/"))
     x <- x %>%
@@ -61,7 +62,7 @@ log_BiomassC <- foreach(i = 1:nrow(simInfo), .combine="rbind") %dopar% {
 }
 log_BiomassC <- melt(log_BiomassC, id.vars = c("simID", "areaName", "treatment", "initComm",
                                "landtype", "replicate", "Time", "species", "Age"))
-save(log_BiomassC, file = paste0("log_BiomassC_",areaName, "_", treatment, ".RData"))
+save(log_BiomassC, file = paste0("log_BiomassC_", areaName, ".RData"))
 
 
 ################################################################################
@@ -76,6 +77,7 @@ log_Pools <- foreach(i = 1:nrow(simInfo), .combine="rbind") %dopar% {
     landtype <- simInfo[i,"landtypes"]
     initComm <- simInfo[i,"initComm"]
     replicate <- simInfo[i,"replicate"]
+    treatment <- simInfo[i,"treatment"]
     
     x <- read.csv(paste(sDir, "log_Pools.csv", sep = "/"))
     x <- x %>%
@@ -93,7 +95,7 @@ log_Pools <- foreach(i = 1:nrow(simInfo), .combine="rbind") %dopar% {
 }
 log_Pools <- melt(log_Pools, id.vars = c("simID", "areaName", "treatment", "initComm",
                                             "landtype", "replicate", "Time", "species"))
-save(log_Pools, file = paste0("log_Pools_",areaName, "_", treatment, ".RData"))
+save(log_Pools, file = paste0("log_Pools_",areaName, ".RData"))
 
 
 ################################################################################
@@ -107,6 +109,7 @@ log_Summary <- foreach(i = 1:nrow(simInfo), .combine="rbind") %dopar% {
     landtype <- simInfo[i,"landtypes"]
     initComm <- simInfo[i,"initComm"]
     replicate <- simInfo[i,"replicate"]
+    treatment <- simInfo[i,"treatment"]
     
     x <- read.csv(paste(sDir, "log_Summary.csv", sep = "/"))
     x <- x %>%
@@ -124,4 +127,4 @@ log_Summary <- foreach(i = 1:nrow(simInfo), .combine="rbind") %dopar% {
 }
 log_Summary <- melt(log_Summary, id.vars = c("simID", "areaName", "treatment", "initComm",
                                          "landtype", "replicate", "Time"))
-save(log_Summary, file = paste0("log_Summary_",areaName, "_", treatment, ".RData"))
+save(log_Summary, file = paste0("log_Summary_",areaName, ".RData"))

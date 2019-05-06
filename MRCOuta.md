@@ -10,7 +10,7 @@ output:
     toc: no
 ---
 
-Updated on Apr 18 2019
+Updated on May 06 2019
 
 
 -------
@@ -38,7 +38,7 @@ For a more general description of this project, its associated objectives and ex
 
 ### With firewood harvesting  
 
-[Animated figure here][2] (right-click to save on disk - recommended)
+[Animated figure here][2]
 
 
 ![](figures/harv_MRCOuta_firewoodSinglePass_lastPrescr.png)
@@ -50,7 +50,7 @@ For a more general description of this project, its associated objectives and ex
 
 ### Without firewood harvesting  
   
-[Animated figure here][3] (right-click to save on disk - recommended)
+[Animated figure here][3]
 
 ![](figures/harv_MRCOuta_noFirewood_lastPrescr.png)
   
@@ -58,8 +58,6 @@ For a more general description of this project, its associated objectives and ex
 ![](figures/harvRates_MRCOuta_3.png)
 
 
-### Single-cell simulations
-![](figures/pools_Summary_singleCellSims_MRCOuta.png)
 
 
 [1]: https://github.com/dcyr/firewood_landis/

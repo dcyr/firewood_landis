@@ -10,7 +10,7 @@ output:
     toc: no
 ---
 
-Updated on Apr 12 2019
+Updated on May 06 2019
 
 
 -------
@@ -22,30 +22,36 @@ This repository contains input files, documentation and simulation outputs (comi
 
 -----------
 
+### Table of content
+- [Study areas][01]
+- [Preliminary results (landscape level)][02]
+- [single-cell (stand-level) simulations][03]
+- Area specific results (external links)
+    + [MRC 'Centre' (Mékinac, Shawinigan, Portneuf)][04]
+    + [MRC 'Outaouais' (Collines, Papineau, Pontiac)][05]
 
-### Study area
-
-The study areas are located in the Sugar Maple and Yellow birch bioclimatic domain of Southern Quebec. More specifically each of the simulated areas includes three MRCs [_(Municipalités régionales de comté)_][3]. The westernmost one is located in Outaouais, while the other one is located in Mauricie and Centre-du-Québec.
-
-For a more detailed description of each simulation areas, with associated results, click on the links below.
-
-- [MRC 'Centre' (Mékinac, Shawinigan, Portneuf)][1]
-- [MRC 'Outaouais' (Collines, Papineau, Pontiac)][2]
+[01]: #single-cell-simulations
+[02]: https://github.com/dcyr/firewood_landis/blob/master/MRCOuta.md#single-cell-simulations
+[03]: 
+[04]: https://github.com/dcyr/firewood_landis/blob/master/MRCCentre.md
+[05]: https://github.com/dcyr/firewood_landis/blob/master/MRCOuta.md
 
 
-[1]: https://github.com/dcyr/firewood_landis/blob/master/MRCCentre.md
-[2]: https://github.com/dcyr/firewood_landis/blob/master/MRCOuta.md
-[3]: https://en.wikipedia.org/wiki/Regional_county_municipality
+### Study areas
 
+The study areas cover the Sugar Maple and Yellow birch (temperate hardwoods) to the Balsam Fir and White Birch biomclimatic domains (mixedwood boreal). More specifically each of the simulated areas includes three MRCs [_(Municipalités régionales de comté)_][3]. The westernmost one is located in Outaouais and is the warmer study area, while the other one is located in Mauricie and Centre-du-Québec and extents further north, hence including more boreal species and forest types.
 
 -----------  
+
+
+
 
 
 ![](figures/studyArea.png)
 -----------
 
 
-### Preliminary results
+### Preliminary results (landscape level)
 Disclaimer: These results are preliminary and __will__ change. They are presented here to verify the current implementation of the experiment and the overall dynamics of the simulated systems. Modification of the input parameters are planned and may substantially affect results.
 
 Note that net emissions associated with production and consumption of firewood are currently estimated indirectly, which causes some of the interannual variations. Upcoming simulations, which will include replications of each treatment, will smooth out some of those variations.
@@ -64,5 +70,18 @@ Note that net emissions associated with production and consumption of firewood a
 
 -----------
 
+
+### Additionnal content
+
+For a more detailed description of each simulation areas, with associated results, click on the links below.
+
+
+
+[Click here][4] for illustrations of single-cell simulations in both areas. Those illustrate how carbon stocks and fluxes evolve as forest stands develop with and without the influence of various harvest treatments.
+
+
+
+[3]: https://en.wikipedia.org/wiki/Regional_county_municipality
+[4]: https://github.com/dcyr/firewood_landis/blob/master/singleCellSims.md
 
 
