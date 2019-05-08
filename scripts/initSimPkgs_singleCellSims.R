@@ -19,8 +19,8 @@ require(raster)
 
 inputDir <- "../inputs"
 timestep <- 1
-simDuration <- 500
-simArea <- "MRCOuta"
+simDuration <- 1000
+simArea <- "MRCCentre"
 #inputs <- list.files(inputDir)
 
 
@@ -31,18 +31,24 @@ landtypes <- raster(paste0(inputDir, "/landtypes_", simArea, ".tif"))
 
 ##############################
 
-speciesList <- list(bor = paste(c("ACER.SAH 1", "FAGU.GRA 1",
-                                  "POPU.TRE 1", "ABIE.BAL 1",
-                                  "BETU.ALL 1", "BETU.PAP 1",
-                                  "ACER.RUB 1"), collapse = "\n"))
+# speciesList <- list(bor = paste(c("ACER.SAH 1", "FAGU.GRA 1",
+#                                   "POPU.TRE 1", "ABIE.BAL 1",
+#                                   "BETU.ALL 1", "BETU.PAP 1",
+#                                   "ACER.RUB 1"), collapse = "\n"))
+speciesList <- list(bor = paste(c("ABIE.BAL 1", "POPU.TRE 1",
+                                  "PICE.MAR 1", "BETU.PAP 1"),
+                                  collapse = "\n"))
+ 
+
+
 
 timestep <- 1
 expDesign <- list(area = simArea,
-                  #landtypes = c("418_1", "418_2", "418_3", "418_4", "418_5"), ## Portneuf
-                  landtypes = c("425_1", "425_2", "425_3", "425_4", "425_5"), ## Papineau
-                  treatment = list("CPRS" = seq(from = 100, to = simDuration-100, by = 100),
-                                   "CJ" = seq(from = 100, to = simDuration-70, by = 35),
-                                   "Firewood" = seq(from = 100, to = simDuration-70, by = 35)),
+                  landtypes = c("418_1", "418_2", "418_3", "418_4", "418_5"), ## Portneuf
+                  #landtypes = c("425_1", "425_2", "425_3", "425_4", "425_5"), ## Papineau
+                  treatment = list("CPRS" = seq(from = 100, to = 400, by = 100),
+                                   "CJ" = seq(from = 100, to = 430, by = 35),
+                                   "Firewood" = seq(from = 100, to = 430, by = 35)),
                   nrep = 10)
 
 simInfo <- expand.grid(areaName = expDesign$area,
